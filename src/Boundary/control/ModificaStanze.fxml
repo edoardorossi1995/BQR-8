@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Boundary.control.ModificaStanzeController">
+   <children>
+      <Label fx:id="lblModificaStanza" layoutX="31.0" layoutY="30.0" prefHeight="33.0" prefWidth="192.0" text="Modifica Stanza" textFill="#2f28c3">
+         <font>
+            <Font name="System Italic" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="84.0" prefHeight="25.0" prefWidth="175.0" text="Seleziona Stanza :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertName" layoutX="31.0" layoutY="117.0" prefHeight="25.0" prefWidth="43.0" text="Nome:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertmodifRoomGroup" layoutX="27.0" layoutY="264.0" prefHeight="25.0" prefWidth="175.0" text="Modifica RoomGroup :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertmodifName" layoutX="27.0" layoutY="182.0" prefHeight="25.0" prefWidth="175.0" text="Modifica Nome :">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField layoutX="89.0" layoutY="117.0" prefHeight="25.0" prefWidth="111.0" />
+      <MenuButton fx:id="menubtnRoomGroup" layoutX="223.0" layoutY="92.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="RoomGroup">
+        <items>
+          <MenuItem fx:id="menuitemClassroom" mnemonicParsing="false" text="Classroom" />
+          <MenuItem fx:id="menuitemLaboratory" mnemonicParsing="false" text="Laboratory" />
+            <MenuItem fx:id="menuitemConference" mnemonicParsing="false" text="ConferenceRoom" />
+        </items>
+      </MenuButton>
+      <TextField fx:id="txtInsertmodifName" layoutX="187.0" layoutY="182.0" />
+      <Label layoutX="27.0" layoutY="518.0" prefHeight="25.0" prefWidth="164.0" text="Inserisci Caratteristica :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertCREATEfeatureNAME" layoutX="27.0" layoutY="375.0" prefHeight="25.0" prefWidth="43.0" text="Nome:" />
+      <Label fx:id="lblInsertCREATEnumberOfInst" layoutX="27.0" layoutY="416.0" prefHeight="25.0" prefWidth="124.0" text="Number Of Instances:" />
+      <Label fx:id="lblInsertCREATEDESCRIPTION" layoutX="240.0" layoutY="375.0" prefHeight="25.0" prefWidth="68.0" text="Descrizione:" />
+      <TextField fx:id="txtInsertCREATEfeatureNAME" layoutX="74.0" layoutY="375.0" />
+      <TextField fx:id="txtInsertCREATEDESCRIPTION" layoutX="308.0" layoutY="375.0" prefHeight="25.0" prefWidth="133.0" />
+      <TextField fx:id="txtInsertCREATEnumberOfInst" layoutX="149.0" layoutY="416.0" prefHeight="25.0" prefWidth="43.0" />
+      <Button layoutX="374.0" layoutY="182.0" mnemonicParsing="false" text="Apply" />
+      <Button layoutX="374.0" layoutY="251.0" mnemonicParsing="false" text="Apply" />
+      <Button layoutX="217.0" layoutY="450.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Insert Feature" />
+      <Label layoutX="27.0" layoutY="342.0" prefHeight="25.0" prefWidth="164.0" text="Inserisci Caratteristica :">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertDELETEfeatureNAME" layoutX="27.0" layoutY="556.0" prefHeight="25.0" prefWidth="43.0" text="Nome:">
+         <font>
+            <Font name="System Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblInsertDELETEDESCRIPTION" layoutX="240.0" layoutY="556.0" prefHeight="25.0" prefWidth="68.0" text="Descrizione:" />
+      <Label fx:id="lblInsertDELETEnumberOfInst" layoutX="27.0" layoutY="601.0" prefHeight="25.0" prefWidth="124.0" text="Number Of Instances:" />
+      <TextField fx:id="txtInsertDELETEfeatureNAME" layoutX="77.0" layoutY="556.0" />
+      <TextField fx:id="txtInsertDELETEDESCRIPTION" layoutX="308.0" layoutY="556.0" prefHeight="25.0" prefWidth="133.0" />
+      <TextField fx:id="txtInsertDELETEnumberOfInst" layoutX="149.0" layoutY="601.0" prefHeight="25.0" prefWidth="43.0" />
+      <Button layoutX="212.0" layoutY="639.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="99.0" text="Delete Feature" />
+      <MenuButton fx:id="menubtnModifRoomGroup" layoutX="187.0" layoutY="239.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="RoomGroup">
+         <items>
+            <MenuItem fx:id="menuitemModifClassroom" mnemonicParsing="false" text="Classroom" />
+            <MenuItem fx:id="menuitemModifLaboratory" mnemonicParsing="false" text="Laboratory" />
+            <MenuItem fx:id="menuitemModifConference" mnemonicParsing="false" text="ConferenceRoom" />
+         </items>
+      </MenuButton>
+      <ScrollPane layoutX="497.0" layoutY="117.0" prefHeight="211.0" prefWidth="253.0">
+         <content>
+            <TextArea fx:id="scrollbartxtAreaONE" prefHeight="229.0" prefWidth="569.0" />
+         </content>
+      </ScrollPane>
+      <ScrollPane layoutX="497.0" layoutY="400.0" prefHeight="211.0" prefWidth="253.0">
+         <content>
+            <TextArea fx:id="scrollbartxtAreaTWO" prefHeight="348.0" prefWidth="563.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="lblViewRoom" layoutX="497.0" layoutY="75.0" text="Click to View  the Room" />
+      <Button layoutX="652.0" layoutY="71.0" mnemonicParsing="false" text="View Room" />
+      <Label fx:id="lblViewfeatures" layoutX="497.0" layoutY="367.0" text="Click to View  available features" />
+      <Button layoutX="691.0" layoutY="363.0" mnemonicParsing="false" text="View " />
+      <Button fx:id="btnBack" layoutX="274.0" layoutY="30.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="68.0" text="Back" />
+      <Label fx:id="lblRoomGroup" layoutX="234.0" layoutY="121.0" prefHeight="17.0" prefWidth="127.0" text="RoomGroup" />
+      <Label fx:id="lblModifRoomGroup" layoutX="198.0" layoutY="268.0" prefHeight="17.0" prefWidth="127.0" text="RoomGroup" />
+   </children>
+</AnchorPane>
